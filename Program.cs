@@ -9,6 +9,21 @@ namespace Practice_Constructors_Methods_Overload
     {
         static void Main(string[] args)
         {
+            // --CAR--
+            // Create 3 separate instances of car, each using a different constructor overload.
+            Car car1 = new Car();
+            Car car2 = new Car("Hyundai", "IONIQ 5");
+            Car car3 = new Car("Nissan", "Leaf", 2012, 23000);
+
+            // Display the information
+            Console.WriteLine(car1.ToString());
+            Console.WriteLine(car2.ToString());
+            Console.WriteLine(car3.ToString());
+
+            // Added a line to separate the two parts when displayed
+            Console.WriteLine();
+
+            // --BANK ACCOUNT--
             // 1. Create an instance of Bank account in main.
             BankAccount bankAccount = new BankAccount("198768790", "Ronda Rutherford", 9500.87);
             // 2. Display the current information.
@@ -31,5 +46,6 @@ namespace Practice_Constructors_Methods_Overload
             //10.Display the updated information. // No change since the amount was negative ( - )
             Console.WriteLine(bankAccount.ToString());
         } // Main
+
     } // class
 } // namespace
